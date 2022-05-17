@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <style>
+          a {
+    color: red;
+    }
+          body {
+            background-color: black;
+          }
+          
+          </style>
+          <link rel="stylesheet" href="CSS.css">  
+         
+      </head>
+
+      <center><img src="Screenshot 2022-05-04 at 12.53.05 PM.png" length="500px" width="200px"></center>
+      <p style="background-color:grey;"> <marquee> Every kind of Phones Available in Cheap Price.</marquee> </p>
+      <div id="mySidebar" class="sidebar"><img src="Screenshot 2022-05-04 at 12.53.05 PM.png" length="500px" width="200px">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="Main Page.html">Home</a>
+        <a href="Accessories.html">Accessories</a>
+       
+        <a href="Music.html">Audio</a>
+        <a href="Contact Us.html">Contact Us</a>
+      </div>
+      
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Audio</button>  
+        
+      </div>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+     
+    </p>
+    <body>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="Audio.jpeg" length="2500px" width="1000px" >  
+        </div>
+        
+        <div class="mySlides fade" >
+          <img src="airpods pro.png" length="2500px" width="1000px" >
+        </div>
+        
+         </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+     
+        </div>
+        <script>
+          let slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+          </script>
+          
+          
+        
+    </body>
+    <center><h1 style="background-color:grey;"><a href="default.asp" target="_blank"></a>Samsung</h1></center>
+    <body background="final background.jpeg">
+        <div class="row">
+          <div class="col-lg-4 p-5">
+        <img src="earbuds 2.jpeg" class=Thumbnail width="300px" height="180px" alt="£300"><a href="earbuds 2.jpeg" class="btn btn-primary col-md-8 p-2" role="button" style="text-decoration: none;"><p text-decoration="none">Earbuds 2</p></a>
+      </div>
+      <div class="col-lg-4 p-5">
+      <img src="earbuds 3.jpeg" class=Thumbnail width="300px" height="180px" alt="£250"><a href="earbuds 3.jpeg" class="btn btn-primary col-md-8 p-2" role="button" style="text-decoration: none;"><p text-decoration="none">Earbuds  </p></a>
+    </div>
+    <div class="col-lg-4 p-5">
+      <img src="Earbuds live.jpeg" class=Thumbnail width="300px" height="180px" alt="£200"><a href="Earbuds live.jpeg" class="btn btn-primary col-md-8 p-2" role="button" style="text-decoration: none;"><p text-decoration="none">Earbuds Live </p></a>
+  
+      </div>
+  </div>
+  </div>
+  
+  <center><h1 style="background-color:grey;"><a href="default.asp" target="_blank"></a>Apple</h1></center>
+     <div class="row">
+    <div class="col-lg-4 p-5">
+  <img src="airpods.jpeg" class=Thumbnail width="300px" height="180px" alt="£120"><a href="airpods.jpeg" class="btn btn-primary col-md-8 p-2" role="button" style="text-decoration: none;"><p text-decoration="none">Airpods  </p></a>
+         </div>
+       <div class="col-lg-4 p-5">
+  <img src="airpods pro.jpeg" class=Thumbnail width="300px" height="180px" alt="£90"><a href="airpods pro.jpeg" class="btn btn-primary col-md-8 p-2" role="button" style="text-decoration: none;"><p text-decoration="none">Airpods Pro</p></a>
+     </div>
+           <div class="col-lg-4 p-5">
+  <img src="Airpods pro max.webp" class=Thumbnail width="300px" height="180px" alt="£35"><a href="Airpods pro max.webp" class="btn btn-primary col-md-8 p-2" role="button" style="text-decoration: none;"><p text-decoration="none">Airpods Pro Max</p></a>
+    </div>
+      
+  </div>
+  </div> 
+
+</html>
